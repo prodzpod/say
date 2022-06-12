@@ -1,0 +1,176 @@
+a, span, div, p, em, b, c, ul, li, h1, h2, h3, h4, h5, h6, small, td, input, button {
+    list-style: none;
+    font-family:'Noto Sans CJK', 'Noto Sans', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5;
+    margin-bottom: 4px;
+}
+
+h1 {
+    margin-top: 16px;
+    font-size: 200%;
+}
+
+c {
+    margin: 0 4px;
+    color: #888;
+}
+
+span {
+    color: #44e;
+}
+
+[class*=list] {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: stretch;
+}
+
+.vlist {
+    flex-direction: column;
+}
+
+.hlist > div, .vlist > div { /* for ie compat, used to be [class$=list] > div */
+    flex: 1 0 auto;
+}
+
+.spacer, .header-spacer, .footer-spacer {
+    -ms-flex: 999 1 auto !important;
+    flex: 999 0 auto !important;
+}
+
+/************************************************/
+
+.wrapper {
+    min-height: calc(100vh - 64px);
+}
+
+.base {
+    margin: 32px 64px;
+}
+
+#logo {
+    width: 128px;
+}
+
+.logo-sub {
+    margin-top: 20px;
+}
+
+#info {
+    width: 40px;
+}
+
+.block {
+    margin: 16px 0;
+}
+
+.message * {
+    display: inline-block;
+}
+
+/************************************************/
+
+#post-content {
+    width: 100%;
+    margin-right: 16px;
+    height: 64px;
+    resize: none;
+}
+
+#post-button {
+    word-break: keep-all;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/************************************************/
+
+.feed {
+    opacity: 0;
+    height: 0;
+    transition: opacity 0.5s, height 0.5s;
+}
+
+.ping {
+    background-color: #fff3ae;
+    border-radius: 4px;
+    padding: 4px;
+    margin: -4px;
+}
+
+.feed-pfp {
+    width: 64px;
+    min-width: 64px;
+    margin-right: 16px;
+}
+
+.feed-header {
+    margin: 8px 0;
+}
+
+.feed-main, .feed-content {
+    flex: 1 1 auto !important;
+}
+
+.feed-content * {
+    display: inline;
+}
+
+.feed-footer {
+    margin: 16px;
+    justify-content: space-around;
+}
+
+.feed-icon {
+    width: 24px;
+    height: 24px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/************************************************/
+
+#fg > * {
+    width: 100vw;
+    height: 100vh;
+    position: fixed !important;
+    left: 0;
+    top: 0;
+}
+
+.newacc-wrapper {
+    background-color: #ffffff80;
+}
+
+.newacc {
+    background-color: white;
+    width: 50%;
+    min-width: 256px;
+    height: 256px;
+    margin-top: calc(50vh - 128px);
+    padding: 32px;
+    text-align: center;
+}
+
+.newacc > * {
+    height: 33%;
+    border-radius: 16px;
+    margin: 16px;
+}
+
+.newacc > input {
+    padding: 8px;
+    border: 2px solid lightgray;
+}
+
+.black {
+    background-color: black;
+}
+
+.logo {
+    width: 128px;
+    position: absolute;
+    top: 32px;
+    left: 64px;
+}

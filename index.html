@@ -1,0 +1,131 @@
+<html>
+    <head>
+        <title>.say: Pour Your Heart Out</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <script src="./js/data.js"></script>
+        <script src="./js/main.js"></script>
+    </head>
+    <body>
+        <div class="wrapper base vlist">
+            <header class="hlist">
+                <a href="./index.html"><svg id="logo" viewBox="0 0 32 10"><path d="m1 10a1 1 0 000-2 1 1 0 000 2m3 0a1 1 0 010-2l4 0a1 1 0 000-2l-2 0a1 1 0 010-6l4 0a1 1 0 010 2l-4 0a1 1 0 000 2l2 0a1 1 0 010 6m7 0a2 2 0 01-2-2l0-2a2 2 0 012-2l3 0a1 1 0 000-2l-4 0a1 1 0 010-2l4 0a3 3 0 013 3l0 5a2 2 0 01-2 2m-3-4a1 1 0 000 2l2 0a1 1 0 000-2m5-5a1 1 0 012 0l0 2a1 1 0 001 1l2 0a1 1 0 001-1l0-2a1 1 0 012 0l0 7a2 2 0 01-2 2l-5 0a1 1 0 010-2l3 0a1 1 0 000-2l-2 0a2 2 0 01-2-2"></path></svg></a>
+                <a class="logo-sub" href="./index.html"><span>#Overworld</span></a>
+                <div class="spacer"></div>
+                <a href="./help.html"><svg id="info" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg></a>
+            </header>
+            <div class="block hlist" id="post">
+                <textarea id="post-content" onkeyup="resizeArea(this)" placeholder="생각나는 대로 적어보세요." autofocus></textarea>
+                <button id="post-button" onpointerdown="postMe()">포스트</button>
+            </div>
+            <div id="feed">
+                <!-- <div class="feed vlist">
+                    <div class="hlist">
+                        <svg viewBox="0 0 8 8" class="feed-pfp">
+                            <rect x="0" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="0" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="1" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="2" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="3" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="4" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="5" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="6" y="7" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="0" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="1" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="2" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="3" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="4" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="5" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="6" width="1" height="1" fill="black"></rect>
+                            <rect x="7" y="7" width="1" height="1" fill="black"></rect>
+                        </svg>
+                        <div class="feed-main vlist">
+                            <div class="feed-header hlist">
+                                <b>Name</b>
+                                <c>@name</c>
+                                <div class="spacer"></div>
+                                <c>TIMESTAMP</c>
+                            </div>
+                            <div class="feed-content">
+                                <p>TRKGJEDLKBKL FDKLMVRLK DLKMD. KERGNTRLKBMEB .RGTR B ? RKJBRL;B</p>
+                                <span>@name</span>
+                                <p> kgjrtl ht bekjnv ae..,fg trhrh,</p>
+                            </div>
+                            <div class="spacer"></div>
+                        </div>
+                    </div>
+                    <div class="feed-footer hlist">
+                        <button class="feed-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><\!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --\><path d=""/></svg></button>
+                        <button class="feed-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><\!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --\><path d=""/></svg></button>
+                        <button class="feed-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><\!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --\><path d=""/></svg></button>
+                    </div>
+                </div> -->
+            </div>
+            <div class="spacer"></div>
+            <footer class="hlist">
+                <div class="spacer"></div>
+                <c>prodzpod 2022</c>
+                <div class="spacer"></div>
+            </footer>
+            <div id="fg">
+                <div class="hlist newacc-wrapper">
+                    <div class="spacer"></div>
+                    <div class="newacc vlist">
+                        <p>New Account</p>
+                        <input id="newacc-name" onkeyup="onkeyregister()" placeholder="ID를 입력하세요...">
+                        <button onpointerdown="register()">가입</button>
+                    </div>
+                    <div class="spacer"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
