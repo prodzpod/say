@@ -85,6 +85,9 @@ function register() {
     e('newacc-name').value = '';
     if (!you.length || USERS.findIndex(x => x.endsWith('@' + you)) !== -1) return;
     cleanElement('fg');
+    setTimeout(function() {
+        e('post-content').focus();
+    }, 0);
     progress = 0;
 }
 
