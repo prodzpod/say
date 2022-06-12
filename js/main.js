@@ -76,8 +76,9 @@ window.onload = function() {
     postCommon();
 }
 
-function onkeyregister() {
+function onkeyregister(event) {
     e('newacc-name').value = e('newacc-name').value.replace(/\W+/g, '');
+    if (event.keyCode === 13) register();
 }
 
 function register() {
